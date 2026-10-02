@@ -1,0 +1,11 @@
+[done] zread: ok=False 930ms tools=None
+[done] teach-mcp: ok=True 60018ms tools=None
+[done] ppt-server: ok=True 120012ms tools=None
+[done] research-knowledge: ok=True 120011ms tools=None
+[done] pandoc: ok=True 120013ms tools=None
+[done] word-document-server: ok=True 120013ms tools=None
+[done] context7: ok=True 120023ms tools=None
+[done] memory: ok=True 120023ms tools=None
+[done] academic-office: ok=True 240020ms tools=None
+[done] pinepaper: ok=True 240020ms tools=None
+WROTE D:\glm生成计划\claude-video\audit_work\mcp_health.json

@@ -1,0 +1,5 @@
+The MCP tools `mcp__memory__read_graph` and `mcp__teach-mcp__list_visual_types` are not available in my toolset. I only have access to the tools listed in my system prompt, and neither of those MCP servers is configured.
+
+```json
+{"memory_ok": false, "teach_ok": false}
+```

@@ -1,0 +1,91 @@
+[
+ {
+  "name": "zread",
+  "kind": "http",
+  "url_host": "https://api.z.ai/api/mcp/zread/mcp",
+  "elapsed_ms": 930,
+  "ok": false,
+  "error": "<HTTPError 400: 'Bad Request'>"
+ },
+ {
+  "name": "teach-mcp",
+  "kind": "stdio",
+  "cmd": "E:/conda/python.exe E:\\Firefly_AI_Pet\\tools\\teach_mcp_provider_launcher.py E:\\Firefly_AI_MCP\\teach_mcp\\server.py",
+  "elapsed_ms": 60018,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "teach-mcp 1.29.1"
+ },
+ {
+  "name": "ppt-server",
+  "kind": "stdio",
+  "cmd": "E:/conda/Scripts/uvx.exe --from office-powerpoint-mcp-server --with mcp<2 ppt_mcp_server",
+  "elapsed_ms": 120012,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "ppt-mcp-server 1.30.0"
+ },
+ {
+  "name": "research-knowledge",
+  "kind": "stdio",
+  "cmd": "E:\\Firefly_AI_MCP\\research_mcp\\.venv\\Scripts\\python.exe E:\\Firefly_AI_MCP\\research_mcp\\server.py",
+  "elapsed_ms": 120011,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "research-knowledge 4.0.5"
+ },
+ {
+  "name": "word-document-server",
+  "kind": "stdio",
+  "cmd": "E:/conda/Scripts/uvx.exe --from office-word-mcp-server word_mcp_server",
+  "elapsed_ms": 120013,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "Word Document Server 4.0.10"
+ },
+ {
+  "name": "pandoc",
+  "kind": "stdio",
+  "cmd": "E:/conda/Scripts/uvx.exe mcp-pandoc",
+  "elapsed_ms": 120013,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "mcp-pandoc 0.11.1"
+ },
+ {
+  "name": "context7",
+  "kind": "stdio",
+  "cmd": "npx -y @upstash/context7-mcp@4.1.1",
+  "elapsed_ms": 120023,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "Context7 4.1.1"
+ },
+ {
+  "name": "memory",
+  "kind": "stdio",
+  "cmd": "npx -y @modelcontextprotocol/server-memory@2026.8.31",
+  "elapsed_ms": 120023,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "memory-server 0.6.3"
+ },
+ {
+  "name": "academic-office",
+  "kind": "stdio",
+  "cmd": "E:/conda/python.exe E:/Firefly_AI_MCP/academic_office_mcp/server.py",
+  "elapsed_ms": 240020,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "academic-office 1.29.1"
+ },
+ {
+  "name": "pinepaper",
+  "kind": "stdio",
+  "cmd": "npx -y -p @pinepaper.studio/mcp-server -p puppeteer pinepaper-mcp",
+  "elapsed_ms": 240020,
+  "ok": true,
+  "tool_count": null,
+  "server_info": "pinepaper-mcp 1.6.17+b387e3e"
+ }
+]

@@ -1,0 +1,11 @@
+[done] zread: ok=False init=910ms tools=None JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[done] pandoc: ok=True init=2565ms tools=1 
+[done] memory: ok=True init=2552ms tools=9 
+[done] research-knowledge: ok=True init=2302ms tools=6 
+[done] pinepaper: ok=True init=2683ms tools=156 
+[done] ppt-server: ok=True init=2900ms tools=37 
+[done] context7: ok=True init=2876ms tools=2 
+[done] academic-office: ok=True init=2970ms tools=1 
+[done] teach-mcp: ok=True init=3912ms tools=47 
+[done] word-document-server: ok=True init=3280ms tools=54 
+WROTE D:\glm生成计划\claude-video\audit_work\mcp_health2.json

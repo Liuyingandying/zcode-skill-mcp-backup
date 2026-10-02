@@ -1,0 +1,23 @@
+{
+  "_readme": [
+    "scenes.json — 本模板唯一需要编辑的内容文件。所有字段说明：",
+    "meta: title 任意 / fps 固定 30 / width,height 固定 1920,1080 / totalFrames = 时长秒 x 30",
+    "brand: endcard 缺省值（nameCn 中文名 / nameEn 英文 / motto 口号 / yearRange 年份带）",
+    "audio: track 放 public/ 下路径；volumeCurve = {base 常规音量, dropAt 骤降帧, dropTo 降后音量, fadeOutFrom 淡出起始帧}",
+    "scenes: 每个场景 {kind, start, end}（帧）。四型：",
+    "  texture  — 程序化纹理+衬线行。字段: texture(id), camera{amount}, text{lines[],enterAt}",
+    "  photo    — 照片+2.5D视差。字段: photo(public/photos/下文件名), archival(历史照true), camera{amount,driftX}, title, caption, year(大年份,可选), text{lines[]}",
+    "  yearCard — 大年份+名称。字段: texture, year, title(名称), text{lines[]}",
+    "  endcard  — 品牌收束卡。字段: title, sub, motto, yearRange（缺省读 brand）",
+    "剪切节奏规则（shot_grammar.md）：开场两长镜 -> 加速剪切 -> 文字段 5-8s -> 收束卡 3.5-4.5s；相邻场景 start=上一场景 end（硬切）",
+    "文字入场帧 enterAt 为绝对帧（= 该场景 start + 场景内偏移 2~3s）"
+  ],
+  "meta": { "title": "Example Film", "fps": 30, "width": 1920, "height": 1080, "totalFrames": 300 },
+  "brand": { "nameCn": "示例品牌", "nameEn": "EXAMPLE", "motto": "实事求是", "yearRange": "1900 — 2025" },
+  "scenes": [
+    { "id": "ex-open", "kind": "texture", "texture": "dawn-limb", "start": 0, "end": 40, "camera": { "amount": 0.05 } },
+    { "id": "ex-year", "kind": "yearCard", "texture": "amber-crust", "start": 40, "end": 110, "camera": { "amount": 0.04 }, "year": "1900", "title": "示例学堂", "text": { "lines": ["兴学强国"], "enterAt": 80 } },
+    { "id": "ex-photo", "kind": "photo", "photo": "example.jpg", "start": 110, "end": 210, "camera": { "amount": 0.05, "driftX": 6 }, "archival": true, "title": "历史一刻", "caption": "示例说明文字" },
+    { "id": "ex-end", "kind": "endcard", "start": 210, "end": 300 }
+  ]
+}

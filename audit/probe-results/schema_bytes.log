@@ -1,0 +1,11 @@
+{'name': 'zread', 'skip': 'http'}
+{'name': 'memory', 'server': 'memory-server 0.6.3', 'tools': 9, 'schema_bytes': 11485, 'desc_bytes': 560}
+{'name': 'context7', 'server': 'Context7 4.1.1', 'tools': 2, 'schema_bytes': 4927, 'desc_bytes': 2435}
+{'name': 'word-document-server', 'server': 'Word Document Server 4.0.10', 'tools': 54, 'schema_bytes': 30364, 'desc_bytes': 4026}
+{'name': 'ppt-server', 'server': 'ppt-mcp-server 1.30.0', 'tools': 37, 'schema_bytes': 42359, 'desc_bytes': 7921}
+{'name': 'pandoc', 'server': 'mcp-pandoc 0.11.1', 'tools': 1, 'schema_bytes': 6105, 'desc_bytes': 4353}
+{'name': 'pinepaper', 'server': 'pinepaper-mcp 1.6.17+b387e3e', 'tools': 156, 'schema_bytes': 375202, 'desc_bytes': 153586}
+{'name': 'research-knowledge', 'server': 'research-knowledge 4.0.5', 'tools': 6, 'schema_bytes': 3565, 'desc_bytes': 470}
+{'name': 'academic-office', 'server': 'academic-office 1.29.1', 'tools': 1, 'schema_bytes': 1645, 'desc_bytes': 1185}
+{'name': 'teach-mcp', 'server': 'teach-mcp 1.29.1', 'tools': 47, 'schema_bytes': 34303, 'desc_bytes': 19880}
+TOTAL_SCHEMA_BYTES 509955 ~tokens 159360

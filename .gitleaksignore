@@ -1,0 +1,3 @@
+# verified false positives: these values are ENV VAR NAMES (key_env_name_default), not credentials
+D:/zcode-skill-mcp-backup/skills/local/night-fiction-factory/scripts/nff_common.py:generic-api-key:675
+D:/zcode-skill-mcp-backup/skills/local/night-fiction-factory/scripts/nff_common.py:generic-api-key:682

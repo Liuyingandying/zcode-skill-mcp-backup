@@ -1,0 +1,38 @@
+{
+  "line_id": "scifi_01",
+  "tag": "night_20260927_scifi_01",
+  "genre": "科幻",
+  "genre_mode": "label_only",
+  "target": 200,
+  "workers": 2,
+  "engine": {
+    "entry": "experiments/multi_worker_generation/run.py",
+    "args": ["--limit", "200", "--workers", "2", "--tag", "night_20260927_scifi_01"],
+    "cwd": "<LITERARYLAB_NODE_ROOT>",
+    "exit_codes": { "0": "completed", "1": "failed/failed_with_results", "2": "gateway_unreachable" }
+  },
+  "state": {
+    "path": "<LITERARYLAB_NODE_ROOT>/data/multi_worker_generation/runs/multi_worker_<tag>/mw_pilot/state.json",
+    "unit_statuses": ["pending", "claimed", "done", "failed", "recovered_success"],
+    "worker_stale_seconds": 120
+  },
+  "works": {
+    "dir": "<run_dir>/mw_pilot/works/<unit_id>/",
+    "files": ["content.md", "plan.json", "metadata.json"]
+  },
+  "breaker": {
+    "source": "<run_dir>/llm_calls.jsonl（尾部窗口）",
+    "window": 12,
+    "threshold_consecutive_connection_failures": 6,
+    "on_outage": "kill_tree(该线 pid) → status=PAUSED_UPSTREAM → state 原样保留"
+  },
+  "resource": {
+    "worker_stale_seconds": 120,
+    "gate": { "min_headroom_gb": 6, "no_new_commit_pct": 90, "stop_commit_pct": 92 }
+  },
+  "resume": {
+    "command": "run.py --limit 200 --workers 2 --tag <tag> --resume（同 tag 幂等续跑）",
+    "recover_only": "run.py --recover-only --tag <tag>（磁盘产物恢复，不调 LLM）",
+    "failed_policy": "FAILED_UNITS_REQUIRE_EXPLICIT_RETRY；显式重试须 --retry-failed --yes-rewrite-state（先备份）"
+  }
+}

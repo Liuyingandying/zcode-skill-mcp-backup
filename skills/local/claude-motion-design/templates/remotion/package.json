@@ -1,0 +1,25 @@
+{
+  "name": "claude-motion-film",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Instance of skills/claude_motion_design \u2014 content-driven Claude-style brand film",
+  "scripts": {
+    "dev": "remotion studio --no-open",
+    "build": "tsc --noEmit",
+    "render": "remotion render Film out/film.mp4 --concurrency=1",
+    "still": "remotion still Film out/still.jpg",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "@remotion/google-fonts": "4.0.484",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.484",
+    "claude-motion-core": "file:../../../../claude-motion-core"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.3"
+  }
+}

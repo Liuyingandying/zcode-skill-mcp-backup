@@ -1,0 +1,13 @@
+# 统一行尾与文本处理，避免不同平台 clone 后出现整文件 diff
+* text=auto eol=lf
+
+# 二进制文件不参与文本转换
+*.png binary
+*.jpg binary
+*.svg text eol=lf
+
+# Markdown 与代码按文本处理
+*.md   text eol=lf
+*.json text eol=lf
+*.tex  text eol=lf
+*.py   text eol=lf

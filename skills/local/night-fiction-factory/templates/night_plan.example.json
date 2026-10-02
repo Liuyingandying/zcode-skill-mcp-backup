@@ -1,0 +1,51 @@
+{
+  "plan_id": "night_20260927",
+  "created_at": "2026-09-27T21:05:12+08:00",
+  "provider": "glm",
+  "model": "",
+  "start_mode": "now",
+  "stop_at": "08:00",
+  "max_total_workers": 12,
+  "per_line_cap": 9,
+  "genre_mode": "label_only",
+  "allocation_budget": 12,
+  "lines": {
+    "scifi_01": {
+      "line_id": "scifi_01",
+      "tag": "night_20260927_scifi_01",
+      "genre": "科幻",
+      "target": 200,
+      "workers": 2,
+      "status": "PLANNED"
+    },
+    "mystery_01": {
+      "line_id": "mystery_01",
+      "tag": "night_20260927_mystery_01",
+      "genre": "悬疑",
+      "target": 200,
+      "workers": 2,
+      "status": "PLANNED"
+    },
+    "urban_01": {
+      "line_id": "urban_01",
+      "tag": "night_20260927_urban_01",
+      "genre": "都市",
+      "target": 200,
+      "workers": 2,
+      "status": "PLANNED"
+    },
+    "fantasy_01": {
+      "line_id": "fantasy_01",
+      "tag": "night_20260927_fantasy_01",
+      "genre": "奇幻",
+      "target": 200,
+      "workers": 2,
+      "status": "PLANNED"
+    }
+  },
+  "_notes": [
+    "genre 是组织标签（label_only）：引擎按内建比例混合题材，无 line-specific 注入通道",
+    "workers 由全局资源预算摊分（6 线以上每线默认 2），绝不 N 线 × 9",
+    "tag 必须匹配 ^[A-Za-z0-9_\\-]{1,64}$，计划内与磁盘 run 目录双重唯一"
+  ]
+}

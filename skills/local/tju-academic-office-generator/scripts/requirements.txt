@@ -1,0 +1,6 @@
+# 本 Skill scripts/ 的运行依赖（本机 conda 环境已全部就位）
+python-docx>=1.1
+python-pptx>=0.6.21
+pypdf>=4.0
+pywin32>=306; sys_platform == "win32"
+pillow>=8.0

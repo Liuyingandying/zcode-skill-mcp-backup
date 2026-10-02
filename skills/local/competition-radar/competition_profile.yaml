@@ -1,0 +1,86 @@
+# Firefly Global Competition Radar - 用户画像
+# 由 competition-radar skill 每次执行时读取；只描述事实与偏好，不含推断。
+# 更新日期：2026-09-19
+
+profile_version: 1.0
+updated: 2026-09-19
+
+user:
+  school: 天津大学
+  degree: 本科在读（大三）
+  major: 光电信息科学与工程
+  target: 电子信息方向研究生（系统工程方向）
+  language: 中文母语，英文技术阅读无障碍
+  eligibility_notes:
+    - 中国高校在读本科生，可参加国际公开赛事与中国面向高校学生的赛事
+    - 可个人参赛或 3~5 人组队
+
+skills:
+  focus:
+    - AI Agent
+    - LLM 应用
+    - MCP
+    - Python
+    - FPGA
+    - 嵌入式
+    - THz-ISAC
+    - 通信
+    - 光电
+
+interests:   # v2：机会雷达覆盖的全部类别（不限技术方向）
+  tech:
+    - AI Agent
+    - AIGC
+    - 人工智能应用
+    - 编程/Hackathon
+    - FPGA
+    - 嵌入式
+    - 硬件创新
+    - 机器人
+    - 通信
+    - THz/6G
+    - 光电
+  non_tech:
+    - 视频创作
+    - AI 视频
+    - 公益影像
+    - 摄影
+    - 作文/写作
+    - 科普传播
+    - 创新创业
+
+projects:
+  - name: Firefly AI Pet
+    type: 多模态 AI 桌面宠物 Agent
+    keywords: [AI Agent, Personal Assistant, MCP, Memory, Workflow]
+    reusable_for: AI Agent 赛道、LLM 应用赛道、个人助手类赛题、MCP 生态挑战
+  - name: THz-ISAC FPGA Imaging
+    type: 太赫兹通信感知一体化 FPGA 成像与硬件验证
+    keywords: [THz, 6G, ISAC, FPGA, Embedded, Sensing]
+    reusable_for: 6G/通信赛道、FPGA/嵌入式赛道、硬件设计赛道、科研展示
+  - name: 科研文档自动化系统
+    type: 学术文档生产管线（tju-academic-office-generator + MCP）
+    keywords: [AI productivity, Research Assistant, Automation]
+    reusable_for: AI 生产力赛道、科研工具赛道、自动化/效率类赛题
+
+preferences:
+  prefer:
+    - 国际比赛
+    - 大学生比赛
+    - Hackathon
+    - 创新创业挑战
+    - 开源挑战
+    - 科研展示
+    - 视频与影像创作（含 AI 视频、公益影像）
+    - 摄影
+    - 写作与科普传播
+  exclude:
+    - 纯数学竞赛
+    - 纯算法刷题
+    - 高费用比赛
+    - 已截止比赛
+
+feasibility_notes:
+  - 国际线下赛事需评估差旅与签证成本；自费且成本高者按"高费用"过滤或降星
+  - 线上/提交作品制赛事优先
+  - 团队要求：可个人参赛或 3~5 人组队

@@ -1,0 +1,25 @@
+{
+  "mcp": {
+    "servers": {
+      "pinepaper": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "-p",
+          "@pinepaper.studio/mcp-server",
+          "-p",
+          "puppeteer",
+          "pinepaper-mcp"
+        ],
+        "env": {
+          "PINEPAPER_EXECUTION_MODE": "puppeteer",
+          "PUPPETEER_SKIP_DOWNLOAD": "1",
+          "PUPPETEER_EXECUTABLE_PATH": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+          "PINEPAPER_EXPORT_DIR": "D:\\glm生成计划\\Firefly_Animation_Test\\exports"
+        },
+        "timeoutMs": 600000,
+        "enabled": true
+      }
+    }
+  }
+}

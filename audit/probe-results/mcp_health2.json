@@ -1,0 +1,100 @@
+[
+ {
+  "name": "zread",
+  "kind": "http",
+  "url_host": "https://api.z.ai/api/mcp/zread/mcp",
+  "init_ms": 910,
+  "ok": false,
+  "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+ },
+ {
+  "name": "pandoc",
+  "kind": "stdio",
+  "cmd": "E:/conda/Scripts/uvx.exe mcp-pandoc",
+  "init_ms": 2565,
+  "server_info": "mcp-pandoc 0.11.1",
+  "tool_count": 1,
+  "tools_ms": 2565,
+  "ok": true
+ },
+ {
+  "name": "memory",
+  "kind": "stdio",
+  "cmd": "npx -y @modelcontextprotocol/server-memory@2026.8.31",
+  "init_ms": 2552,
+  "server_info": "memory-server 0.6.3",
+  "tool_count": 9,
+  "tools_ms": 2552,
+  "ok": true
+ },
+ {
+  "name": "research-knowledge",
+  "kind": "stdio",
+  "cmd": "E:\\Firefly_AI_MCP\\research_mcp\\.venv\\Scripts\\python.exe E:\\Firefly_AI_MCP\\research_mcp\\server.py",
+  "init_ms": 2302,
+  "server_info": "research-knowledge 4.0.5",
+  "tool_count": 6,
+  "tools_ms": 2302,
+  "ok": true
+ },
+ {
+  "name": "pinepaper",
+  "kind": "stdio",
+  "cmd": "npx -y -p @pinepaper.studio/mcp-server -p puppeteer pinepaper-mcp",
+  "init_ms": 2683,
+  "server_info": "pinepaper-mcp 1.6.17+b387e3e",
+  "tool_count": 156,
+  "tools_ms": 2684,
+  "ok": true
+ },
+ {
+  "name": "ppt-server",
+  "kind": "stdio",
+  "cmd": "E:/conda/Scripts/uvx.exe --from office-powerpoint-mcp-server --with mcp<2 ppt_mcp_server",
+  "init_ms": 2900,
+  "server_info": "ppt-mcp-server 1.30.0",
+  "tool_count": 37,
+  "tools_ms": 2900,
+  "ok": true
+ },
+ {
+  "name": "context7",
+  "kind": "stdio",
+  "cmd": "npx -y @upstash/context7-mcp@4.1.1",
+  "init_ms": 2876,
+  "server_info": "Context7 4.1.1",
+  "tool_count": 2,
+  "tools_ms": 2876,
+  "ok": true
+ },
+ {
+  "name": "academic-office",
+  "kind": "stdio",
+  "cmd": "E:/conda/python.exe E:/Firefly_AI_MCP/academic_office_mcp/server.py",
+  "init_ms": 2970,
+  "server_info": "academic-office 1.29.1",
+  "tool_count": 1,
+  "tools_ms": 2970,
+  "ok": true
+ },
+ {
+  "name": "teach-mcp",
+  "kind": "stdio",
+  "cmd": "E:/conda/python.exe E:\\Firefly_AI_Pet\\tools\\teach_mcp_provider_launcher.py E:\\Firefly_AI_MCP\\teach_mcp\\server.",
+  "init_ms": 3912,
+  "server_info": "teach-mcp 1.29.1",
+  "tool_count": 47,
+  "tools_ms": 3913,
+  "ok": true
+ },
+ {
+  "name": "word-document-server",
+  "kind": "stdio",
+  "cmd": "E:/conda/Scripts/uvx.exe --from office-word-mcp-server word_mcp_server",
+  "init_ms": 3280,
+  "server_info": "Word Document Server 4.0.10",
+  "tool_count": 54,
+  "tools_ms": 3280,
+  "ok": true
+ }
+]

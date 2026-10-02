@@ -1,0 +1,92 @@
+{
+  "mcp": {
+    "servers": {
+      "zread": {
+        "type": "http",
+        "url": "https://api.z.ai/api/mcp/zread/mcp",
+        "headers": {
+          "Authorization": "Bearer ${ZREAD_TOKEN}"
+        },
+        "timeoutMs": 60000
+      },
+      "memory": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-memory@2026.8.31"
+        ],
+        "env": {
+          "MEMORY_FILE_PATH": "C:/Users/<you>/.zcode/memory/mcp-memory.jsonl"
+        }
+      },
+      "context7": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@upstash/context7-mcp@4.1.1"
+        ]
+      },
+      "word-document-server": {
+        "command": "E:/conda/Scripts/uvx.exe",
+        "args": [
+          "--from",
+          "office-word-mcp-server",
+          "word_mcp_server"
+        ]
+      },
+      "ppt-server": {
+        "command": "E:/conda/Scripts/uvx.exe",
+        "args": [
+          "--from",
+          "office-powerpoint-mcp-server",
+          "--with",
+          "mcp<2",
+          "ppt_mcp_server"
+        ]
+      },
+      "pandoc": {
+        "command": "E:/conda/Scripts/uvx.exe",
+        "args": [
+          "mcp-pandoc"
+        ]
+      },
+      "pinepaper": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "-p",
+          "@pinepaper.studio/mcp-server",
+          "-p",
+          "puppeteer",
+          "pinepaper-mcp"
+        ],
+        "env": {
+          "PINEPAPER_EXECUTION_MODE": "puppeteer",
+          "PUPPETEER_SKIP_DOWNLOAD": "1",
+          "PUPPETEER_EXECUTABLE_PATH": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+          "PINEPAPER_EXPORT_DIR": "<your-export-dir>"
+        },
+        "timeoutMs": 600000
+      },
+      "research-knowledge": {
+        "command": "E:\\Firefly_AI_MCP\\research_mcp\\.venv\\Scripts\\python.exe",
+        "args": [
+          "E:\\Firefly_AI_MCP\\research_mcp\\server.py"
+        ]
+      },
+      "academic-office": {
+        "command": "E:/conda/python.exe",
+        "args": [
+          "E:/Firefly_AI_MCP/academic_office_mcp/server.py"
+        ]
+      },
+      "teach-mcp": {
+        "command": "E:/conda/python.exe",
+        "args": [
+          "E:\\Firefly_AI_Pet\\tools\\teach_mcp_provider_launcher.py",
+          "E:\\Firefly_AI_MCP\\teach_mcp\\server.py"
+        ]
+      }
+    }
+  }
+}

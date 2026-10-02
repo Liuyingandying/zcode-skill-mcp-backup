@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "competition_profile": "CN_CUMCM",
+  "run_mode": "full",
+  "phase": 0,
+  "current_role": "startup",
+  "interaction_mode": "B",
+  "collab_mode": "mixed",
+  "writing_pace": "",
+  "artifacts": [],
+  "active_params": {},
+  "superseded": [],
+  "open_questions": [],
+  "known_issues": []
+}

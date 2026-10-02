@@ -1,0 +1,52 @@
+{
+  "pp-2023a-2300336": {
+    "pages": 25,
+    "chars": 43404,
+    "needs_ocr": false
+  },
+  "pp-2023b-2300136": {
+    "pages": 25,
+    "chars": 68543,
+    "needs_ocr": false
+  },
+  "pp-2023c-2300348": {
+    "pages": 26,
+    "chars": 46215,
+    "needs_ocr": false
+  },
+  "pp-2023e-2301428": {
+    "pages": 25,
+    "chars": 46288,
+    "needs_ocr": false
+  },
+  "pp-2024a-2400996": {
+    "pages": 24,
+    "chars": 49011,
+    "needs_ocr": false
+  },
+  "pp-2024b-2407038": {
+    "pages": 25,
+    "chars": 61485,
+    "needs_ocr": false
+  },
+  "pp-2024c-2401298": {
+    "pages": 25,
+    "chars": 48589,
+    "needs_ocr": false
+  },
+  "pp-2025a-2500836": {
+    "pages": 25,
+    "chars": 53998,
+    "needs_ocr": false
+  },
+  "pp-2025b-2501687": {
+    "pages": 25,
+    "chars": 43313,
+    "needs_ocr": false
+  },
+  "pp-2025c-2500759": {
+    "pages": 26,
+    "chars": 60511,
+    "needs_ocr": false
+  }
+}

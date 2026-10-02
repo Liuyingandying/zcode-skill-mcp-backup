@@ -1,0 +1,5 @@
+The `mcp__pinepaper__pinepaper_tool_guide` tool is not listed among the available tools in this session. The PinePaper Studio skill (`pinepaper-studio`) is available as a ZCode skill, but it doesn't expose an MCP tool named `pinepaper_tool_guide`.
+
+```json
+{"pinepaper_ok": false, "returned_tool_count": null}
+```
